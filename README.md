@@ -22,6 +22,7 @@
 2. **Install Terraform**: Follow the [official guide](https://learn.hashicorp.com/tutorials/terraform/install-cli) to install Terraform.
 3. **Install AWS CLI**: Follow the [official guide](https://docs.aws.amazon.com/cli/latest/userguide/install-cliv2.html) to install AWS CLI.
 4. **Configure AWS CLI**: Run `aws configure` and provide your AWS Access Key ID, Secret Access Key, region, and output format.
+    a. You may need to enter a session token as well. To do this in your root directory type `cd .aws` and then vim into the credentials file. `vim credntials` and copy your aws_session_token below your key ID and access key.
 5. **Generate SSH Key**: Generate an SSH key named `MinecraftKey`  by going to the AWS dashboard, search for "key pairs" in the search bar, and click "Create key pair". Name it `MinecraftKey`, and download the `.pem` file into the cloned repository.
 ### Step 2: Run Start_Server.sh
 1. Once you are ready run  the start_server.sh script
